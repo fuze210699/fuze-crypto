@@ -4,6 +4,7 @@ import millify from "millify";
 import React from "react";
 
 export default function Stats({ globalStats }) {
+  if (!globalStats) return "Something went wrong";
   return (
     <Row>
       <Col span={12}>
